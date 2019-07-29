@@ -1,9 +1,9 @@
 require 'sinatra/base'
-require 'data_mapper_setup'
+
 class Bliss < Sinatra::Base
 
 get '/' do
-
+  redirect "/spaces"
 end
 
 get '/logon' do
@@ -11,7 +11,7 @@ get '/logon' do
 end
 
 get '/spaces' do
-
+  erb :index
 end
 
 get '/spaces/new' do
@@ -19,6 +19,10 @@ get '/spaces/new' do
 end
 
 get '/requests' do
+
+end
+
+get '/logout' do
 
 end
 
