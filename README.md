@@ -55,13 +55,13 @@ So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
 # Progress Tracking
-- 9:30am - StandUp (setting daily goals, raising issues) 
-- 2:00pm - StandUp (cheking in, chat about what went well, setting goals for the rest of the afternoon)
+- 9:30am - StandUp (setting daily goals, raising issues)
+- 2:00pm - StandUp (checking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
 
 ## Monday (29.07)
 ### Meeting 1
-- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper, 
+- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper,
 - Writing out user stories
 - Creating issues for each user story, feature, etc.
 - Assigning pairs (Ben & Genny, Kareem & Anastasiia)
