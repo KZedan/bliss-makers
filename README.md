@@ -54,6 +54,19 @@ As a holidaymaker
 So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
+# Setting up Databases
+## Database
+1. Use Homebrew to install the package -> ```brew install postgresql```
+2. Connect to psql -> ```psql postgres```
+3. Create a databse ```bliss``` -> ```CREATE DATABASE bliss;```
+4. List all available databases to check that ```bliss``` database was added -> ``\l```
+5. Connect to ```bliss``` -> ```\c bliss;```
+6. Quit ```psql``` -> ```\q```
+7. Open TablePlus and open ```bliss``` database by clicking on ```create a new connection``` tab on the bottom left.
+8. Add a new table named ```users``` to ```bliss```.
+9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
+
+
 # Progress Tracking
 - 9:30am - StandUp (setting daily goals, raising issues)
 - 2:00pm - StandUp (checking in, chat about what went well, setting goals for the rest of the afternoon)
@@ -61,14 +74,14 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 
 ## Monday (29.07)
 ### Meeting 1
-- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper,
+- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper)
 - Writing out user stories
 - Creating issues for each user story, feature, etc.
 - Assigning pairs (Ben & Genny, Kareem & Anastasiia)
 - Setting up all the files for the project - FRAMEWORK
 ### Afternoon Meeting
 - Talk about databases, decide what ORM to use for the project
-- Assign tasks
+- Assign tasks (Anstasiia - record the database setup instructions, Genny & Kareem - research DataMapper and add it to the project, Ben - work on Controller and View)
 
 ## Tuesday (30.07)
 ## Wednesday (31.07)
