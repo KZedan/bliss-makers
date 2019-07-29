@@ -5,6 +5,7 @@
    - [Project Setup](https://github.com/makersacademy/course/tree/master/makersbnb#project-setup)
    - [XP Values](https://github.com/makersacademy/course/tree/master/makersbnb#xp-values)
    - [Development Workflow](https://github.com/makersacademy/course/blob/master/pills/development_workflow.md)
+   - [Workshop Video](https://drive.google.com/open?id=18oBTHQp5m0-5uDq9mcvfIon4jB4A_auv)
 
 # User Stories
 ```
@@ -52,7 +53,7 @@ As a holidaymaker
 So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
-#Progress Tracking
+# Progress Tracking
 - 9:30am - StandUp (setting daily goals, raising issues) 
 - 2:00pm - StandUp (cheking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
