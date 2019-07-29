@@ -57,7 +57,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 # Setting up Databases
 ## Database ```bliss```
 1. Use Homebrew to install the package in Terminal -> ```brew install postgresql```
-2. Connect to psql in Terminal -> ```psql postgres```
+2. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss_test``` -> ```CREATE DATABASE bliss_test;```
 4. List all available databases to check that ```bliss_test``` database was added -> ```\l;```
 5. Connect to ```bliss_test``` -> ```\c bliss_test;```
@@ -70,7 +70,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** to row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
 13. Upload/Save all the changes.
 ## Database ```bliss_test```
-1. Connect to psql in Terminal -> ```psql postgres```
+1. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss``` -> ```CREATE DATABASE bliss;```
 4. List all available databases to check that ```bliss``` database was added -> ```\l;```
 5. Connect to ```bliss``` -> ```\c bliss;```
