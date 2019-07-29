@@ -6,12 +6,16 @@ get '/' do
   redirect "/spaces"
 end
 
-get '/logon' do
-
+get '/signup' do
+  erb :signup
 end
 
 get '/spaces' do
   erb :index
+end
+
+post '/spaces' do
+
 end
 
 get '/spaces/new' do
@@ -19,7 +23,7 @@ get '/spaces/new' do
 end
 
 get '/requests' do
-
+  erb :requests
 end
 
 get '/logout' do

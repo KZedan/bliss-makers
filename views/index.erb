@@ -1,9 +1,18 @@
 <!Doctype html>
 <html>
-
+<head>
+<style>
+  body {
+  background-image: url("bliss.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
 <h1> Welcome to Bliss </h1>
 <form action="/spaces" method="get">
-  <input name="spaces" type="submit" value="Spaces"/>
+  <input name="user_name" type="submit" value="Spaces"/>
 </form>
 <form action="/requests" method="get">
   <input name="requests" type="submit" value="Requests"/>
@@ -11,3 +20,5 @@
 <form action="/logout" method="get">
   <input name="logout" type="submit" value="Logout"/>
 </form>
+
+</body>
