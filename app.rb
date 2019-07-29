@@ -1,5 +1,5 @@
 require 'sinatra/base'
-
+require 'data_mapper_setup'
 class Bliss < Sinatra::Base
 
 

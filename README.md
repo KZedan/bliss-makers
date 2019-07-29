@@ -55,11 +55,7 @@ So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
 # Progress Tracking
-<<<<<<< HEAD
 - 9:30am - StandUp (setting daily goals, raising issues)
-=======
-- 9:30am - StandUp (setting daily goals, raising issues) 
->>>>>>> 9e16c058337e92c46bc1e1e3f77c72e95fbf4fc3
 - 2:00pm - StandUp (checking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
 
