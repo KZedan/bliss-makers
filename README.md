@@ -58,19 +58,6 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 ## Database ```bliss```
 1. Use Homebrew to install the package in Terminal -> ```brew install postgresql```
 2. Connect to ```psql``` in Terminal -> ```psql postgres```
-3. Create a databse ```bliss_test``` -> ```CREATE DATABASE bliss_test;```
-4. List all available databases to check that ```bliss_test``` database was added -> ```\l;```
-5. Connect to ```bliss_test``` -> ```\c bliss_test;```
-6. Quit ```psql``` -> ```\q;```
-7. Open TablePlus and open ```bliss_test``` database by clicking on ```create a new connection``` tab on the bottom left.
-8. Add a new table named ```users``` to ```bliss_test``` database.
-9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
-10. Add a new table named ```spaces``` to ```bliss_test``` database.
-11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
-12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** to row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
-13. Upload/Save all the changes.
-## Database ```bliss_test```
-1. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss``` -> ```CREATE DATABASE bliss;```
 4. List all available databases to check that ```bliss``` database was added -> ```\l;```
 5. Connect to ```bliss``` -> ```\c bliss;```
@@ -79,6 +66,19 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 8. Add a new table named ```users``` to ```bliss``` database.
 9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
 10. Add a new table named ```spaces``` to ```bliss``` database.
+11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
+12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** to row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
+13. Upload/Save all the changes.
+## Database ```bliss_test```
+1. Connect to ```psql``` in Terminal -> ```psql postgres```
+3. Create a databse ```bliss_test``` -> ```CREATE DATABASE bliss_test;```
+4. List all available databases to check that ```bliss_test``` database was added -> ```\l;```
+5. Connect to ```bliss_test``` -> ```\c bliss_test;```
+6. Quit ```psql``` -> ```\q;```
+7. Open TablePlus and open ```bliss_test``` database by clicking on ```create a new connection``` tab on the bottom left.
+8. Add a new table named ```users``` to ```bliss_test``` database.
+9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
+10. Add a new table named ```spaces``` to ```bliss_test``` database.
 11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
 12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** to row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
 13. Upload/Save all the changes.
