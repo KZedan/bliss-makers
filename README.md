@@ -1,4 +1,4 @@
-# bliss-makers :sparkles: :man::woman::woman::man: :sparkles:
+# bliss-makers :sparkles: :man: :woman: :woman: :man: :sparkles:
 
 
 1. [Makers BnB Instructions](https://github.com/makersacademy/course/tree/master/makersbnb#turning-a-specification-into-user-stories)
