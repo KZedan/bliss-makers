@@ -6,6 +6,7 @@
    - [XP Values](https://github.com/makersacademy/course/tree/master/makersbnb#xp-values)
    - [Development Workflow](https://github.com/makersacademy/course/blob/master/pills/development_workflow.md)
  2. [Workshop Video](https://drive.google.com/open?id=18oBTHQp5m0-5uDq9mcvfIon4jB4A_auv)
+ 3. [ERD Tutorial](https://www.youtube.com/watch?v=QpdhBUYk7Kk&list=WL&index=9&t=65s)
 
 # User Stories
 ```
@@ -59,6 +60,16 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 - 4:30pm - Retro (Feedback)
 
 ## Monday (29.07)
+### Meeting 1
+- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper, 
+- Writing out user stories
+- Creating issues for each user story, feature, etc.
+- Assigning pairs (Ben & Genny, Kareem & Anastasiia)
+- Setting up all the files for the project - FRAMEWORK
+### Afternoon Meeting
+- Talk about databases, decide what ORM to use for the project
+- Assign tasks
+
 ## Tuesday (30.07)
 ## Wednesday (31.07)
 ## Thursday (01.08)
