@@ -60,11 +60,11 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 - 4:30pm - Retro (Feedback)
 
 ## Monday (29.07)
--Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper, 
--Writing out user stories
--Creating issues for each user story, feature, etc.
--Assigning pairs (Ben & Genny, Kareem & Anastasiia)
--Setting up all the files for the project - FRAMEWORK
+- Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper, 
+- Writing out user stories
+- Creating issues for each user story, feature, etc.
+- Assigning pairs (Ben & Genny, Kareem & Anastasiia)
+- Setting up all the files for the project - FRAMEWORK
 
 ## Tuesday (30.07)
 ## Wednesday (31.07)
