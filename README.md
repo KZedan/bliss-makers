@@ -1,8 +1,8 @@
 # bliss-makers
 
 
-[Makers BnB Instructions](https://github.com/makersacademy/course/tree/master/makersbnb#turning-a-specification-into-user-stories)
-[Project Setup](https://github.com/makersacademy/course/tree/master/makersbnb#project-setup)
+-[Makers BnB Instructions](https://github.com/makersacademy/course/tree/master/makersbnb#turning-a-specification-into-user-stories)
+-[Project Setup](https://github.com/makersacademy/course/tree/master/makersbnb#project-setup)
 
 # User Stories
 ```
