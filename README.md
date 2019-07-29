@@ -3,6 +3,8 @@
 
 1. [Makers BnB Instructions](https://github.com/makersacademy/course/tree/master/makersbnb#turning-a-specification-into-user-stories)
    - [Project Setup](https://github.com/makersacademy/course/tree/master/makersbnb#project-setup)
+   - [XP Values](https://github.com/makersacademy/course/tree/master/makersbnb#xp-values)
+   - [Development Workflow](https://github.com/makersacademy/course/blob/master/pills/development_workflow.md)
 
 # User Stories
 ```
