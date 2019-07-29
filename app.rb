@@ -15,7 +15,7 @@ get '/spaces' do
 end
 
 get '/spaces/new' do
-
+  erb :new
 end
 
 get '/requests' do
