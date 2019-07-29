@@ -83,6 +83,8 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** to row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
 13. Upload/Save all the changes.
 
+https://user-images.githubusercontent.com/42152431/62059824-de99e700-b21b-11e9-89aa-00b695548a75.png
+
 
 
 # Progress Tracking
