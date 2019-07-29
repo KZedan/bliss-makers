@@ -60,7 +60,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 2. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss``` -> ```CREATE DATABASE bliss;```
 4. List all available databases to check that ```bliss``` database was added -> ```\l;```
-5. Connect to ```bliss``` -> ```\c bliss;```
+5. Connect to ```bliss``` to check that there is a connection -> ```\c bliss;```
 6. Quit ```psql``` -> ```\q;```
 7. Open TablePlus and open ```bliss``` database by clicking on ```create a new connection``` tab on the bottom left.
 8. Add a new table named ```users``` to ```bliss``` database.
@@ -73,7 +73,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 1. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss_test``` -> ```CREATE DATABASE bliss_test;```
 4. List all available databases to check that ```bliss_test``` database was added -> ```\l;```
-5. Connect to ```bliss_test``` -> ```\c bliss_test;```
+5. Connect to ```bliss_test``` to check that there is a connection -> ```\c bliss_test;```
 6. Quit ```psql``` -> ```\q;```
 7. Open TablePlus and open ```bliss_test``` database by clicking on ```create a new connection``` tab on the bottom left.
 8. Add a new table named ```users``` to ```bliss_test``` database.
