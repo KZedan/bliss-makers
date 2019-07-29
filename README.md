@@ -5,7 +5,7 @@
    - [Project Setup](https://github.com/makersacademy/course/tree/master/makersbnb#project-setup)
    - [XP Values](https://github.com/makersacademy/course/tree/master/makersbnb#xp-values)
    - [Development Workflow](https://github.com/makersacademy/course/blob/master/pills/development_workflow.md)
-   - [Workshop Video](https://drive.google.com/open?id=18oBTHQp5m0-5uDq9mcvfIon4jB4A_auv)
+ 2. [Workshop Video](https://drive.google.com/open?id=18oBTHQp5m0-5uDq9mcvfIon4jB4A_auv)
 
 # User Stories
 ```
