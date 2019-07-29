@@ -1,4 +1,4 @@
-# bliss-makers
+# bliss-makers :sparkles: :man::woman::woman::man: :sparkles:
 
 
 1. [Makers BnB Instructions](https://github.com/makersacademy/course/tree/master/makersbnb#turning-a-specification-into-user-stories)
@@ -106,6 +106,15 @@ Foreign Key reference:
 ### Afternoon Meeting
 - Talk about databases, decide what ORM to use for the project
 - Assign tasks (Anstasiia - record the database setup instructions, Genny & Kareem - research DataMapper and add it to the project, Ben - work on Controller and View)
+### Retro
+- Really bad times with DataMapper (setting up, configuring) -> will speak to one of the coaches on Tuesday morning.
+- Pretty sick README. 
+- View has been set up.
+- ***WHAT WENT WELL:*** stunning View, cool README, great planning, created identical databases together to avoid any potential issues with it in a future.
+- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** branching and merging without crashing -> will speak to the coach to double check.
+
+**EVERYONE IS HAPPY! :yellow_heart: :blue_heart: :purple_heart: :star: :boom: :fire:**
+
 
 ## Tuesday (30.07)
 ## Wednesday (31.07)
