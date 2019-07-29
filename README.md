@@ -58,8 +58,8 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 - 2:00pm - StandUp (cheking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
 
-## Monday
-## Tuesday
-## Wednesday
-## Thursday
-## Friday
+## Monday (29.07)
+## Tuesday (30.07)
+## Wednesday (31.07)
+## Thursday (01.08)
+## Friday (02.08)
