@@ -57,3 +57,9 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 - 9:30am - StandUp (setting daily goals, raising issues) 
 - 2:00pm - StandUp (cheking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
+
+## Monday
+## Tuesday
+## Wednesday
+## Thursday
+## Friday
