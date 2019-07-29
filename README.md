@@ -55,7 +55,7 @@ So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
 # Setting up Databases
-## Database
+## Database ```bliss```
 1. Use Homebrew to install the package -> ```brew install postgresql```
 2. Connect to psql -> ```psql postgres```
 3. Create a databse ```bliss``` -> ```CREATE DATABASE bliss;```
@@ -63,8 +63,11 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 5. Connect to ```bliss``` -> ```\c bliss;```
 6. Quit ```psql``` -> ```\q;```
 7. Open TablePlus and open ```bliss``` database by clicking on ```create a new connection``` tab on the bottom left.
-8. Add a new table named ```users``` to ```bliss```.
+8. Add a new table named ```users``` to ```bliss``` database.
 9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
+10. Add a new table named ```space``` to ```bliss``` database.
+11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
+12. Add a FOREIGN KEY to ```space``` -> 
 
 
 # Progress Tracking
