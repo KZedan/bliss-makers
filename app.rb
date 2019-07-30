@@ -7,17 +7,15 @@ require_relative './lib/space.rb'
 class Bliss < Sinatra::Base
 
 get '/' do
-   p User.create(
-        :user_name => "yowutsup",
-        :email => "yowutsup@yo.wutsup",
-        :password => "thisismypassword",
-    )
-  p Space.create(
-        :space_name => "Elizabeth Manor",
-        :description => "Manor like",
-        :price => 200,
-        :user_id => 1
-      )
+  
+end
+
+get '/signup' do
+  p User.create(
+    :user_name => "Ben",
+    :email => "Benp@Ben.wutsup",
+    :password => "thisismypassword",
+  )
 end
 
 get '/logon' do
@@ -29,7 +27,12 @@ get '/spaces' do
 end
 
 get '/spaces/new' do
-
+  p Space.create(
+    :space_name => "Elizabeth Manor",
+    :description => "Manor like",
+    :price => 200,
+    :user_id => 2
+  )
 end
 
 get '/requests' do
