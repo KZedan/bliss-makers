@@ -7,11 +7,9 @@ require_relative './lib/space.rb'
 class Bliss < Sinatra::Base
 
 get '/' do
+ redirect '/spaces'
 
 end
-
-
-
 
 get '/signup' do
   # p User.create(
@@ -23,7 +21,8 @@ get '/signup' do
 end
 
 get '/spaces' do
-
+  @spaces = Space.all
+  p @spaces
   erb :index
 end
 
