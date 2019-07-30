@@ -21,14 +21,17 @@
     <center><h2> Listings </h2></center>
       <% @spaces.each do |space| %>
       <div class="container">
-          <div class="three.columns">
+        <div class="row">
+               <div align="left" class="one-third column value">
               <%= space.space_name %>
-              <%= space.description %>
-              <%= space.price %>
+              </div>
+              <div class="one-third column value">
+              <i><%= space.description %></i>
+              </div>
+              <div class="one-third column value">
+              £<%= space.price %>
+              </div>
           </div>
       </div>
       <% end %>
-
-
-
 </body>
