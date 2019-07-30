@@ -10,19 +10,20 @@ get '/' do
 
 end
 
-get '/signup' do
-  p User.create(
-    :user_name => "Ben",
-    :email => "Benp@Ben.wutsup",
-    :password => "thisismypassword",
-  )
-end
+
+
 
 get '/signup' do
+  # p User.create(
+  #   :user_name => "Ben",
+  #   :email => "Benp@Ben.wutsup",
+  #   :password => "thisismypassword",
+  # )
   erb :signup
 end
 
 get '/spaces' do
+
   erb :index
 end
 
