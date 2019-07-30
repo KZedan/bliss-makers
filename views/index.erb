@@ -14,7 +14,7 @@
 </head>
 <body>
 
-
+<h1> Welcome to Bliss </h1>
 <form action="/spaces" method="get">
   <input name="user_name" type="submit" value="Spaces"/>
 </form>
@@ -24,7 +24,25 @@
 <form action="/logout" method="get">
   <input name="logout" type="submit" value="Logout"/>
 </form>
-<% @spaces.each do |space| %>
-<%= space.space_name %>    <%= space.description %>    <%= space.price %>
-<% end %>
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @spaces.each do |space| %>
+      <td><%= space.space_name %></td>
+      <td><%= space.description %></td>
+      <td><%= space.price %></td>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+
+
+
 </body>
