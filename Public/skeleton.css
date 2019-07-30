@@ -28,13 +28,36 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header-site{
+  background-image: url("bliss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+}
+
+
 .container {
+  border-radius: 25px;
+  background-image: url("module_bg.jpg");
   position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 15px;
+  height: 60px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px;
+  vertical-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  color: white;}
+
 .column,
 .columns {
   width: 100%;
@@ -124,7 +147,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Courier";
   color: #222; }
 
 

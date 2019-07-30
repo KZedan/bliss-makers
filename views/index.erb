@@ -3,19 +3,12 @@
 <head>
   <link rel="stylesheet" type="text/css" href="skeleton.css">
 
-<style>
-
-  body {
-  background-image: url("bliss.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-</style>
 </head>
 <body>
+<div class="header-site">
+<center><h1><br> Welcome to Bliss </h1></center>
 
-<h1> Welcome to Bliss </h1>
-<form action="/spaces" method="get">
+<!-- <form action="/spaces" method="get">
   <input name="user_name" type="submit" value="Spaces"/>
 </form>
 <form action="/requests" method="get">
@@ -23,25 +16,18 @@
 </form>
 <form action="/logout" method="get">
   <input name="logout" type="submit" value="Logout"/>
-</form>
-<table class="u-full-width">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
+</form> -->
+</div>
+    <center><h2> Listings </h2></center>
       <% @spaces.each do |space| %>
-      <td><%= space.space_name %></td>
-      <td><%= space.description %></td>
-      <td><%= space.price %></td>
+      <div class="container">
+          <div class="three.columns">
+              <%= space.space_name %>
+              <%= space.description %>
+              <%= space.price %>
+          </div>
+      </div>
       <% end %>
-    </tr>
-  </tbody>
-</table>
 
 
 
