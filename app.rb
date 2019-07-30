@@ -10,20 +10,21 @@ get '/' do
 
 end
 
-
-
-
 get '/signup' do
-  # p User.create(
-  #   :user_name => "Ben",
-  #   :email => "Benp@Ben.wutsup",
-  #   :password => "thisismypassword",
-  # )
   erb :signup
 end
 
-get '/spaces' do
+post '/signup/new' do
+  @user = User.create( 
+    :user_name => params[:user_name],
+    :email => params[:email],
+    :password => params[:password],
+  )
+  redirect '/spaces'
+end
 
+get '/spaces' do
+  p @user = User.last(:user_name => "somebody")
   erb :index
 end
 
