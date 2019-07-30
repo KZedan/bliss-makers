@@ -10,5 +10,3 @@ gem 'sinatra', :require => nil
 gem 'rspec'
 gem 'capybara'
 gem 'rack'
-gem 'data_mapper'
-gem 'dm-postgres-adapter'
