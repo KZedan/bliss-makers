@@ -26,7 +26,7 @@ class Bliss < Sinatra::Base
   end
 
   post '/signup/new' do
-    user = User.create( 
+    user = User.create(
       :user_name => params[:user_name],
       :email => params[:email],
       :password => params[:password],
@@ -42,16 +42,17 @@ class Bliss < Sinatra::Base
   end
 
   post '/spaces' do
-
+    p Space.create(
+      :space_name => params[:space_name],
+      :description => params[:description],
+      :price => params[:price],
+      :user_id => session[:user_id],
+    )
+    redirect '/spaces'
   end
 
   get '/spaces/new' do
-    p Space.create(
-      :space_name => "Elizabeth Manor",
-      :description => "Manor like",
-      :price => 200,
-      :user_id => 2
-    )
+    erb :new
   end
 
   get '/requests' do
