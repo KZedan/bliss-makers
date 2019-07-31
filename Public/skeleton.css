@@ -28,13 +28,37 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header-site{
+  background-image: url("bliss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+}
+
+
 .container {
+  border-radius: 25px;
+  background-image: url("module_bg.jpg");
   position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 15px;
+  height: 60px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px;
+  vertical-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+}
+
 .column,
 .columns {
   width: 100%;
@@ -54,7 +78,8 @@
     width: 80%; }
   .column,
   .columns {
-    margin-left: 4%; }
+    margin-left: 4%;
+   }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -62,7 +87,7 @@
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
+  .three.columns                  { width: 22%;}
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
@@ -73,6 +98,8 @@
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
+  .end-small.column               { width: 25.6666666667%; }
+  .middle-small.column            { width: 31.6666666667%; }
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
@@ -124,7 +151,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Courier";
   color: #222; }
 
 
@@ -416,3 +443,63 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+  .navbar {
+  overflow: hidden;
+  background-color: 0 0;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

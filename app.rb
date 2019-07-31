@@ -16,7 +16,7 @@ class Bliss < Sinatra::Base
   end
 
   post '/signup/new' do
-    user = User.create( 
+    user = User.create(
       :user_name => params[:user_name],
       :email => params[:email],
       :password => params[:password],
