@@ -40,6 +40,30 @@
 
 }
 
+.header-siter{
+  background-image: url("bliss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 760px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+}
+
+.header-siterr{
+  background-image: url("bliss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 760px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+}
+
 
 .container {
   border-radius: 25px;
@@ -447,11 +471,12 @@ there.
   .navbar {
   overflow: hidden;
   background-color: 0 0;
+  font-size: 18px;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -475,7 +500,7 @@ there.
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: 0 0;
 }
 
 .dropdown-content {

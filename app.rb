@@ -13,6 +13,10 @@ class Bliss < Sinatra::Base
 
   end
 
+  get '/details' do
+    erb :details
+  end
+
   get '/sessions/new' do
     erb :login
   end
@@ -46,7 +50,10 @@ class Bliss < Sinatra::Base
 
   get '/spaces' do
     @user = User.get(session[:user_id])
+<<<<<<< HEAD
     @spaces = Space.all
+=======
+>>>>>>> 05457889516fb9bc55f97a5acdbaab63c76089a0
   erb :index
   end
 

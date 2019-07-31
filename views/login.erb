@@ -1,21 +1,40 @@
 <!Doctype html>
 <html>
 <head>
-<style>
-  body {
-  background-image: url("bliss.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="../skeleton.css">
 </head>
 <body>
+<<<<<<< HEAD
   <center><h1> Welcome to Bliss, log in below </h1>
   <center><h2>
     <%= flash[:notice] %>
   </h2>
+=======
+<div class="header-siterr">
+
+  <center><h1> Welcome to Bliss </h1
+    <br>
+    <br>
+>>>>>>> 05457889516fb9bc55f97a5acdbaab63c76089a0
   <center><form action="/sessions" method="post">
     <br><input name="email" type="email" placeholder="Email"/>
     <br><input name="password" type="password" placeholder="Password"/>
     <br><input type="submit" value="Sign in" />
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><h6> If you don't have an account with us,<br>
+      please go to our sign page below </h6>
+    <center><form action="/signup" method="get">
+      <input type="submit" value="Sign up" />
+      </form>
+    </div>
 </body>
+</html>
