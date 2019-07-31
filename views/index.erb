@@ -6,6 +6,19 @@
 </head>
 <body>
 <div class="header-site">
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/spaces">Listings</a>
+          <a href="/requests">Requests</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+    </div>
 <center><h1><br> Welcome to Bliss </h1></center>
 
 <h1> Welcome to Bliss, <%= @user.user_name %>! </h1>

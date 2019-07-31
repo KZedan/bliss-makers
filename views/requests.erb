@@ -1,10 +1,36 @@
-<h1> View your Bliss requests </h1>
-<form action="/spaces" method="get">
-  <input name="spaces" type="submit" value="Spaces"/>
-</form>
-<form action="/requests" method="get">
-  <input name="requests" type="submit" value="Requests"/>
-</form>
-<form action="/logout" method="get">
-  <input name="logout" type="submit" value="Logout"/>
-</form>
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="skeleton.css">
+</head>
+<body>
+<div class="header-site">
+  <br>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Menu
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/spaces">Listings</a>
+        <a href="/requests">Requests</a>
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  <center><h1><br> Requests </h1></center>
+  </div>
+
+
+<div class="section values">
+
+      <div class="row">
+        <div class="one-half column value">
+          <h2>Requests I've made</h2>
+        </div>
+        <div class="one-half column value">
+          <h2>Requests I've recieved</h2>
+        </div>
+      </div>
+    </div>

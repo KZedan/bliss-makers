@@ -471,11 +471,12 @@ there.
   .navbar {
   overflow: hidden;
   background-color: 0 0;
+  font-size: 18px;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -499,7 +500,7 @@ there.
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: 0 0;
 }
 
 .dropdown-content {
