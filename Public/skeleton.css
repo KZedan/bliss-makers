@@ -40,6 +40,18 @@
 
 }
 
+.header-siter{
+  background-image: url("bliss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+}
+
 
 .container {
   border-radius: 25px;

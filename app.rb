@@ -11,6 +11,10 @@ class Bliss < Sinatra::Base
 
   end
 
+  get '/details' do
+    erb :details
+  end
+
   get '/sessions/new' do
     erb :login
   end
