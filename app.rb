@@ -1,18 +1,20 @@
 require 'sinatra/base'
 require 'data_mapper'
+require 'sinatra/flash'
 require_relative './data_mapper_setup.rb'
 require_relative './lib/user.rb'
 require_relative './lib/space.rb'
 
 class Bliss < Sinatra::Base
   enable :sessions
+  register Sinatra::Flash
 
   get '/' do
 
   end
 
-  get '/details' do
-    erb :space
+  get '/details/' do
+    erb :details
   end
 
   get '/sessions/new' do
@@ -20,9 +22,16 @@ class Bliss < Sinatra::Base
   end
 
   post '/sessions' do
-    @user = User.last(:email => params[:email])
-    session[:user_id] = @user.id
-    redirect '/spaces'
+    user = User.authenticate(params[:email])
+
+    if user
+      session[:user_id] = user.id
+      user = User.last(:email => params[:email])
+      redirect '/spaces'
+    else
+      flash[:notice] = 'Please check your email and/or password.'
+      redirect '/sessions/new'
+    end
   end
 
   get '/signup' do
@@ -41,11 +50,12 @@ class Bliss < Sinatra::Base
 
   get '/spaces' do
     @user = User.get(session[:user_id])
+    @spaces = Space.all
   erb :index
   end
 
   post '/spaces' do
-    p Space.create(
+    Space.create(
       :space_name => params[:space_name],
       :description => params[:description],
       :price => params[:price],
