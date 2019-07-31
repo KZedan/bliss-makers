@@ -117,6 +117,15 @@ Foreign Key reference:
 
 
 ## Tuesday (30.07)
+### Morning StandUp 
+- assigned pairs (Genny&Ben - listings, Anastasiia&Kareem - users).
+### Afternooon StandUp
+- missed that one. Carried on working on assigned tasks.
+### Retro
+- Managed to pass the tests but @user_name is not showing up on the page.
+- Tried to solve that problem as a group. Decided to look at it again tomorrow morning with fresh eyes.
+- ***WHAT WENT WELL:*** managed to get '/signup/new' working,
+- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** 
 ## Wednesday (31.07)
 ## Thursday (01.08)
 ## Friday (02.08)
