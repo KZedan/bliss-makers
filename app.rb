@@ -11,6 +11,16 @@ class Bliss < Sinatra::Base
 
   end
 
+  get '/sessions/new' do
+    erb :login
+  end
+
+  post '/sessions' do
+    @user = User.last(:email => params[:email])
+    session[:user_id] = @user.id
+    redirect '/spaces'
+  end
+
   get '/signup' do
     erb :signup
   end

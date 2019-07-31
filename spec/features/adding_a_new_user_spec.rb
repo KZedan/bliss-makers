@@ -6,6 +6,6 @@ feature "Register" do
     fill_in "password", with: "somebody'spassword"
     fill_in "password_confirm", with: "somebody'spassword"
     click_button("Submit")
-    expect(page).to have_content("Welcome to Bliss somebody!")
+    expect(page).to have_content("Welcome to Bliss, somebody!")
   end
 end
