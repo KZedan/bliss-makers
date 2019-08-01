@@ -2,6 +2,15 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="skeleton.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bliss</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script
+    <script type="text/javascript" src="js/ui.js"></script>
+
 
 </head>
 <body>
@@ -26,6 +35,13 @@
 
 
     <center><h2> Listings </h2></center>
+    <center><form action="/spaces/search">
+      Check-in date
+      <input type="date" id="from" name="from">
+      <input type="submit" value="Search" />
+      </form>
+
+
       <% @spaces.each do |space| %>
       <div class="container">
 

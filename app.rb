@@ -58,6 +58,11 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
+  get '/spaces/search' do
+    p params[:from]
+
+  end
+
   post '/spaces' do
     Space.create(
       :space_name => params[:space_name],
