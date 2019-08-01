@@ -13,8 +13,12 @@ class Bliss < Sinatra::Base
 
   end
 
-  get '/details/' do
+  get '/spaces/:id' do
     erb :details
+  end
+
+  post '/spaces/:id' do
+    redirect '/requests'
   end
 
   get '/sessions/new' do
@@ -75,6 +79,7 @@ class Bliss < Sinatra::Base
   get '/logout' do
 
   end
+
 
 
   run! if app_file == $0
