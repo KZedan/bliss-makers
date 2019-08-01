@@ -18,14 +18,13 @@
       </div>
     </div>
   </div>
-  <center><h1><br> Space ID </h1></center>
+  <center><h1><br> <%= @space.space_name %></h1></center>
   </div>
   <div class="w3-container">
-  <h2>space_name</h2>
-  <p>Description of the space</p>
+  <p><%= @space.description %></p>
 
   <div class="w3-panel w3-blue w3-card-4">
-    <p>Price.</p>
+    <p><%= @space.price %></p>
   </div>
 </div>
   <center><form action="/request/new" method="post">

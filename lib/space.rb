@@ -11,4 +11,16 @@ class Space
     property :available_date, DateTime
 
     belongs_to :user
+
+    def space_name
+      return self[:space_name]
+    end
+
+    def description
+      return self[:description]
+    end
+
+    def price
+      return self[:price]
+    end
   end
