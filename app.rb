@@ -1,9 +1,10 @@
 require 'sinatra/base'
 require 'data_mapper'
 require 'sinatra/flash'
-require_relative './data_mapper_setup.rb'
-require_relative './lib/user.rb'
-require_relative './lib/space.rb'
+require_relative './data_mapper_setup'
+require_relative './lib/user'
+require_relative './lib/space'
+require_relative './lib/request'
 
 class Bliss < Sinatra::Base
   enable :sessions
@@ -14,7 +15,6 @@ class Bliss < Sinatra::Base
   end
 
   get '/spaces/:id' do
-    erb :details
   end
 
   post '/spaces/:id' do
@@ -81,6 +81,14 @@ class Bliss < Sinatra::Base
     erb :requests
   end
 
+  post '/requests/new' do
+    Request.new(
+      :user_id => session[:user_id],
+      :space_id => 
+    )
+  end
+
+
   get '/logout' do
 
   end
@@ -89,8 +97,6 @@ class Bliss < Sinatra::Base
   get '/details' do
     erb :space
   end
-
-
 
   run! if app_file == $0
 end
