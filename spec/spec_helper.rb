@@ -1,4 +1,4 @@
-ENV['RACK_ENV'] = '_test'
+ENV['RACK_ENV'] = ''
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 require 'capybara'
@@ -6,6 +6,12 @@ require 'capybara/rspec'
 require 'rspec'
 
 Capybara.app = Bliss
+
+RSpec.configure do |config|
+  config.before(:each) do
+    DatabaseCleaner.clean
+  end
+end
 
 
 

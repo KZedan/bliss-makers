@@ -1,3 +1,4 @@
+
 describe Space do
   describe '.available_dates' do
 
@@ -16,3 +17,4 @@ describe Space do
     end
   end
 end
+

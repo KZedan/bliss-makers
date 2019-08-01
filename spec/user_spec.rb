@@ -1,16 +1,15 @@
-# require 'user'
+require 'user'
 
-# describe User do
-#   describe '.create' do
-#     it "creates a new user" do
-#       user = User.create(
-#         :user_name => "Anastasiia Blaha",
-#         :email => "anastasiia.blaha@yoyowutsupyo.com",
-#         :password => "qwerty12345",
-#       )
+describe User do
+  describe ".authenticate" do
+    it "returns nil given an incorrect email address" do
+      user = User.create(
+        :user_name => "Someone",
+        :email => "something@someone.somewhat",
+        :password => "healthybananas",
+      )
 
-#       expect(user.user_name).to eq "Anastasiia Blaha"
-#       expect(user.email).to eq "anastasiia.blaha@yoyowutsupyo.com"
-#     end
-#   end
-# end
+      expect(User.authenticate(:email => "nottherightemail@yeah.not", :password => "healthybananas")).to be_nil
+    end
+  end
+end

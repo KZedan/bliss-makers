@@ -12,7 +12,6 @@ class Space
     property :available_to, Date
     belongs_to :user
 
-
     def available_dates
       @available_dates = Array(available_from...available_to).map {|date| date.strftime("%Y-%m-%d")}
     end
