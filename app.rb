@@ -37,7 +37,7 @@ class Bliss < Sinatra::Base
 
   get '/spaces' do
     @user = User.get(session[:user_id])
-
+    @spaces = Space.all
   erb :index
   end
 
