@@ -10,7 +10,10 @@ class Space
     property :user_id, Integer
     property :available_from, Date
     property :available_to, Date
-    property :available_dates, Date
     belongs_to :user
+
+    def available_dates
+      @available_dates = Array(available_from...available_to).map {|date| date.strftime("%Y-%m-%d")}
+    end
 
 end
