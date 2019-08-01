@@ -8,6 +8,7 @@ class Request
   property :confirmed,     Boolean,  :default => false     
   property :user_id, Integer
   property :space_id, Integer   
+  property :check_in , Date
   
   belongs_to :user
   belongs_to :space
