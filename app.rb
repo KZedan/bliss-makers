@@ -14,12 +14,12 @@ class Bliss < Sinatra::Base
 
   end
 
-  get '/spaces/:id' do
+  get '/spaces/:id/details' do
     @space = Space.get(params[:id])
     erb :space
   end
 
-  post '/spaces/:id' do
+  post '/spaces/:id/details' do
     redirect '/requests'
   end
 
