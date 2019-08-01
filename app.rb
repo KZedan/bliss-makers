@@ -15,9 +15,10 @@ class Bliss < Sinatra::Base
   end
 
   get '/spaces/:id/details' do
+    p "hey"
     p @space = Space.get(params[:id])
     p session[:space_id] = @space.id
-    p session[:check_in] = params[:check_in_date]
+
     erb :space
   end
 
@@ -86,10 +87,12 @@ class Bliss < Sinatra::Base
   end
 
   post '/requests/new' do
-    Request.new(
+    p session[:check_in] = params[:check_in_date]
+    Request.create(
       :user_id => session[:user_id],
       :space_id => session[:space_id],
-      :check_in => session[:check_in]
+      :check_in => session[:check_in],
+      :confirmed => false
     )
   end
 
