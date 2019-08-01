@@ -30,7 +30,7 @@
           <h2>Requests I've made</h2>
           <% @requests.each do |request| %>
           <% if request.user_id == @id_compare %>
-          <%= request.space_id %> <%= request.confirmed %>
+          <%= request.space_name %> <%= request.confirmed %><br>
           <% end %>
 
           <% end %>
