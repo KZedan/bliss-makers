@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="skeleton.css">
+</head>
+<body>
+<div class="header-site">
+  <br>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Menu
+      </button>
+      <div class="dropdown-content">
+        <a href="/spaces">Listings</a>
+        <a href="/requests">Requests</a>
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  <center><h1><br> Space ID </h1></center>
+  </div>
+  <div class="w3-container">
+  <h2>space_name</h2>
+  <p>Description of the space</p>
+
+  <div class="w3-panel w3-blue w3-card-4">
+    <p>Price.</p>
+  </div>
+</div>
+  <center><form action="/request/new" method="post">
+    <input name="user_name" type="text" placeholder="Your name"/>
+    <input name="email" type="email" placeholder="Your email"/>
+    <br><input name="check_in_date" type="date" placeholder="Check in"/>
+    <br><input name="check_out_date" type="date" placeholder="Check out"/>
+    <br><input type="submit" value="Request" />
+    </form>

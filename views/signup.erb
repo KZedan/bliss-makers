@@ -1,20 +1,27 @@
 <!Doctype html>
 <html>
 <head>
-<style>
-  body {
-  background-image: url("bliss.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="skeleton.css">
 </head>
 <body>
-  <center><h1> Welcome to Bliss, sign up below </h1>
+<div class="header-siter">
+
+<center><h1><br> Welcome to Bliss </h1></center>
+<center><h2> Please sign up below </h2>
   <center><form action="/signup/new" method="post">
     <input name="user_name" type="text" placeholder="Your name"/>
     <br><input name="email" type="email" placeholder="Email"/>
     <br><input name="password" type="password" placeholder="Password"/>
     <br><input name="password_confirm" type="password" placeholder="Confirm Password"/>
     <br><input type="submit" value="Submit" />
+    </form>
+    <br>
+    <center><h6> If you already have an account with us,<br>
+      please login below </h6>
+    <center><form action="/sessions/new" method="get">
+      <input type="submit" value="Login" />
+      </form>
+</div>
+
+
 </body>

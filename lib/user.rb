@@ -11,6 +11,12 @@ class User
 
   has n, :spaces
 
+  def self.authenticate(email)
+    user = first(:email => email)
+    return nil if user.nil?
+    user
+  end
+
   def user_name
     return self[:user_name]
   end
