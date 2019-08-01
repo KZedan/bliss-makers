@@ -18,7 +18,6 @@ class Bliss < Sinatra::Base
     p "hey"
     p @space = Space.get(params[:id])
     p session[:space_id] = @space.id
-
     erb :space
   end
 
@@ -83,7 +82,8 @@ class Bliss < Sinatra::Base
   end
 
   get '/requests' do
-    erb :requests
+   p  @requests = Request.all
+   erb :requests
   end
 
   post '/requests/new' do
