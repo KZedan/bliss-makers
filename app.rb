@@ -85,6 +85,11 @@ class Bliss < Sinatra::Base
 
   end
 
+  # temp route for dev
+  get '/details' do
+    erb :space
+  end
+
 
 
   run! if app_file == $0

@@ -28,7 +28,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.header-site{
+.header-site {
   background-image: url("bliss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@
 
 }
 
-.header-siter{
+.header-siter {
   background-image: url("bliss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,10 +49,9 @@
   height: 760px;
   border-radius: 25px;
   margin-bottom: 30px;
-
 }
 
-.header-siterr{
+.header-siterr {
   background-image: url("bliss.jpg");
   background-repeat: no-repeat;
   background-size: cover;
