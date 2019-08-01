@@ -35,6 +35,7 @@ class Bliss < Sinatra::Base
 
     if user
       session[:user_id] = user.id
+      session[:space_id] = user.space_id
       user = User.last(:email => params[:email])
       redirect '/spaces'
     else
@@ -59,6 +60,7 @@ class Bliss < Sinatra::Base
 
   get '/spaces' do
     @user = User.get(session[:user_id])
+    @user_space = User.get(session[:space_name])
     @spaces = Space.all
   erb :index
   end
@@ -84,7 +86,8 @@ class Bliss < Sinatra::Base
 
   get '/requests' do
    p  @requests = Request.all
-   p @id_compare = session[:user_id]
+   p @id_check = session[:user_id]
+   p @id_compare_space = session[:space_id]
    erb :requests
   end
 
