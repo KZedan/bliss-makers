@@ -8,6 +8,7 @@ DataMapper.setup(:default, "postgres://localhost/bliss#{env}")
 # require 'dapp' # require each model individually - the path may vary depending on your file structure.
 require './lib/space'
 require './lib/user'
+require './lib/request'
 
 # # After declaring your models, you should finalise them
 DataMapper.finalize

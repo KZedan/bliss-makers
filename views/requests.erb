@@ -28,9 +28,17 @@
       <div class="row">
         <div class="one-half column value">
           <h2>Requests I've made</h2>
+          <% @requests.each do |request| %>
+          <% if request.user_id == @id_compare %>
+          <%= request.space_name %> <%= request.confirmed %><br>
+          <% end %>
+
+          <% end %>
         </div>
+        </div>
+
         <div class="one-half column value">
           <h2>Requests I've recieved</h2>
         </div>
       </div>
-    </div>
+      </body>
