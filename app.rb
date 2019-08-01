@@ -15,6 +15,7 @@ class Bliss < Sinatra::Base
   end
 
   get '/spaces/:id' do
+    erb :space
   end
 
   post '/spaces/:id' do
@@ -81,12 +82,11 @@ class Bliss < Sinatra::Base
     erb :requests
   end
 
-  post '/requests/new' do
-    Request.new(
-      :user_id => session[:user_id],
-      :space_id => 
-    )
-  end
+  # post '/requests/new' do
+  #   Request.new(
+  #     :user_id => session[:user_id],
+  #     # :space_id =>
+  # end
 
 
   get '/logout' do
@@ -94,9 +94,9 @@ class Bliss < Sinatra::Base
   end
 
   # temp route for dev
-  get '/details' do
-    erb :space
-  end
+  # get '/details' do
+  #   erb :space
+  # end
 
   run! if app_file == $0
 end
