@@ -100,7 +100,7 @@ class Bliss < Sinatra::Base
   get '/requests' do
    p  @requests = Request.all
    p @id_compare = session[:user_id]
-   
+
    erb :requests
   end
 
