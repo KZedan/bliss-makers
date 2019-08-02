@@ -7,14 +7,13 @@ require_relative './lib/space'
 require_relative './lib/request'
 
 class Bliss < Sinatra::Base
+
   enable :sessions
+
   register Sinatra::Flash
 
   get '/' do
-<<<<<<< HEAD
     redirect '/sessions/new'
-=======
-
   end
 
 
@@ -28,7 +27,6 @@ class Bliss < Sinatra::Base
 
   post '/spaces/:id/details' do
     redirect '/requests'
->>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
 
 
@@ -73,10 +71,11 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
-<<<<<<< HEAD
+
   get '/spaces/new' do
     erb :new
-=======
+  end
+
   get '/spaces/search' do
     params[:from]
     @user = User.get(session[:user_id])
@@ -92,7 +91,6 @@ class Bliss < Sinatra::Base
       end
     end
     erb :search
->>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
 
 
@@ -144,6 +142,12 @@ class Bliss < Sinatra::Base
       :check_in => session[:check_in],
       :confirmed => false
     )
+  end
+
+  post '/requests/confirm' do
+    p space_edit = Request.all(:space_id => session[:space_id])
+    space_edit.update(:confirmed => true)
+    redirect ('/requests')
   end
 
   get '/logout' do

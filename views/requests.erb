@@ -20,20 +20,21 @@
       </div>
     </div>
   </div>
+  <div class="w3-container w3-center w3-animate-opacity">
   <center><h1><br> Requests </h1></center>
+  </div>
   </div>
 
 
 <div class="section values" >
-
-
         <div class="one-half column value">
           <h4>Requests I've made</h4>
           <% @requests.each do |request| %>
           <% if request.user_id == @id_check %>
-          <div class="container">
+          <div class="containerrequest">
           <%= request.space_name %> <%= request.confirmed %><br>
           </div>
+
           <% end %>
 
           <% end %>
@@ -50,9 +51,13 @@
           <% @requests.each do |request| %>
 
           <% if request.space_id == @id_compare_space %>
-          <div class="container">
+          <div class="containerrequest">
           <%= request.space_name %> <%= request.confirmed %><br>
           </div>
+          <center><form action="/requests/confirm" method="post">
+            <input type="hidden" name="_method" value="PATCH" />
+            <input type="submit" value="Confirm" />
+            </form>
           <% end %>
 
           <% end %>
