@@ -1,6 +1,8 @@
 require 'sinatra/base'
 require 'data_mapper'
 require 'sinatra/flash'
+
+require 'bcrypt'
 require_relative './data_mapper_setup'
 require_relative './lib/user'
 require_relative './lib/space'
@@ -55,10 +57,11 @@ class Bliss < Sinatra::Base
 
 
   post '/signup/new' do
-    user = User.create(
+   p encrypted_password = BCrypt::Password.create(params[:password])
+    p user = User.create(
       :user_name => params[:user_name],
       :email => params[:email],
-      :password => params[:password],
+      :password => encrypted_password
     )
   session[:user_id] = user.id
   redirect '/spaces'
@@ -71,6 +74,9 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
+  get '/spaces/search' do
+
+  end
 
   get '/spaces/new' do
     erb :new

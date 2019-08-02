@@ -1,14 +1,14 @@
 
 require 'data_mapper'
+require 'bcrypt'
 
 class User
   include DataMapper::Resource
-
-  property :id,         Serial
-  property :user_name,      String
-  property :email,       String
-  property :password, String
-  property :space_id, Integer
+  
+  property :id,         Serial 
+  property :user_name,      String  
+  property :email,       String      
+  property :password, BCryptHash
 
   has n, :spaces
 

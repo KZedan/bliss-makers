@@ -10,7 +10,7 @@
 
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 </head>
@@ -30,15 +30,16 @@
         </div>
       </div>
     </div>
+
 <div class="w3-container w3-center w3-animate-opacity">
 <center><h1> Welcome to Bliss, <%= @user.user_name %>! </h1>
   </div>
-
 </div>
 
 
     <center><h2> Listings </h2></center>
     <center><form action="/spaces/search">
+
       Check-in date
       <input type="date" id="from" name="from">
       <input type="submit" value="Search" />
@@ -56,12 +57,12 @@
                 <div align="right" class="end-small columnn value" nowrap >
                 <br>£<%= space.price %> per night.
                 </div>
-
           </div>
 
           <form action="/spaces/<%= space.id %>/details" method="get">
             <input type="submit" value="Details" />
             </form>
+
 
 
         <%end %>
