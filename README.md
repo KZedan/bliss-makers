@@ -88,6 +88,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 14. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
 15. Add FOREIGN KEYS ```requests``` -> add a foreign key to ```user_id``` and ```space_id```. (See images below for reference)
 16. Upload/Save all the changes.
+
 ```users``` table reference:
 <img width="850" alt="users table" src="https://user-images.githubusercontent.com/42152431/62059827-de99e700-b21b-11e9-95a6-e35a2e98aade.png">
 ```spaces``` table reference:
