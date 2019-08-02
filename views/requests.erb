@@ -33,6 +33,7 @@
           <div class="container">
           <%= request.space_name %> <%= request.confirmed %><br>
           </div>
+
           <% end %>
 
           <% end %>
@@ -48,6 +49,10 @@
           <div class="container">
           <%= request.space_name %> <%= request.confirmed %><br>
           </div>
+          <center><form action="/requests/confirm" method="post">
+            <input type="hidden" name="_method" value="PATCH" />
+            <input type="submit" value="Confirm" />
+            </form>
           <% end %>
 
           <% end %>
