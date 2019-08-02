@@ -154,7 +154,7 @@ class Bliss < Sinatra::Base
   end
 
   get '/logout' do
-
+    redirect ('/')
   end
 
   run! if app_file == $0
