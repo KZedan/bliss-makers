@@ -8,7 +8,7 @@
  2. [Workshop Video](https://drive.google.com/open?id=18oBTHQp5m0-5uDq9mcvfIon4jB4A_auv)
  3. [ERD Tutorial](https://www.youtube.com/watch?v=QpdhBUYk7Kk&list=WL&index=9&t=65s)
 
-# User Stories
+# User Stories :notebook:
 ```
 As a user
 So I can make money from my property
@@ -115,7 +115,7 @@ Foreign Key ```requests``` table, ```space_id```:
 - 2:00pm - StandUp (checking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
 
-## Monday (29.07) 
+## Monday (29.07) :calendar:
 ### Meeting 1
 - Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper)
 - Writing out user stories
@@ -141,8 +141,7 @@ Foreign Key ```requests``` table, ```space_id```:
 
 **EVERYONE IS HAPPY! :yellow_heart: :blue_heart: :purple_heart: :star: :boom: :fire:**
 
-
-## Tuesday (30.07)
+## Tuesday (30.07) :calendar:
 ### Morning StandUp 
 - assigned pairs (Genny&Ben - listings, Anastasiia&Kareem - users).
 ### Afternooon StandUp
@@ -153,10 +152,9 @@ Foreign Key ```requests``` table, ```space_id```:
 - Managed to pass the tests but @user_name is not showing up on the page.
 - Tried to solve that problem as a group. Decided to look at it again tomorrow morning with fresh eyes.
 - ***WHAT WENT WELL:*** managed to get '/signup/new' working,
-- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** 
+- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:***  :exclamation::question::exclamation::question:
 
-
-## Wednesday (31.07)
+## Wednesday (31.07) :calendar:
 ### Morning StandUp
 - assignned pairs and tasks
 
@@ -166,8 +164,7 @@ Foreign Key ```requests``` table, ```space_id```:
 - ***WHAT WENT WELL:*** :chicken::monkey::wolf:
 - ***WHAT DID NOT GO SO WELL:*** :bug::bug::bug:
 
-
-## Thursday (01.08)
+## Thursday (01.08) :calendar:
 ### Morning StandUp
 - assignned pairs and tasks 
 
@@ -178,8 +175,7 @@ Foreign Key ```requests``` table, ```space_id```:
 - ***WHAT WENT WELL:*** :panda_face::panda_face::panda_face:
 - ***WHAT DID NOT GO SO WELL:*** :snail::snail::snail:
 
-
-## Friday (02.08)
+## Friday (02.08) :calendar:
 ### Morning StandUp
 - assignned pairs and tasks
 
@@ -207,4 +203,4 @@ Foreign Key ```requests``` table, ```space_id```:
   
   # Feedback
   - We are very happy of what we have accomplished in a given timeframe 
-  - Feeling proud :blush:
+  - Feeling proud :blush: :heart:
