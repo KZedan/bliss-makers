@@ -157,6 +157,8 @@ class Bliss < Sinatra::Base
   post '/requests/confirm' do
     space_edit = Request.all(:space_id => session[:space_id])
     space_edit.update(:confirmed => true)
+    space = Space.get(session[:space_id])
+    space.remove_date(session[:check_in])
     redirect ('/requests')
   end
 

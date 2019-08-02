@@ -40,4 +40,8 @@ class Space
 
       @available_dates = formatted_dates_arr
     end
+
+    def remove_date(date)
+      @available_dates.delete(date)
+    end
 end
