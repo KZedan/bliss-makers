@@ -54,7 +54,7 @@ As a holidaymaker
 So I can book a place to stay
 I will still be able to book somewhere that has not yet been confirmed by the owner
 ```
-# Setting up Databases
+# Setting up Databases :computer:
 ## Database ```bliss```
 1. Use Homebrew to install the package in Terminal -> ```brew install postgresql```
 2. Connect to ```psql``` in Terminal -> ```psql postgres```
@@ -110,28 +110,30 @@ Foreign Key ```requests``` table, ```space_id```:
 <img width="390" alt="fk space_d" src="https://user-images.githubusercontent.com/42152431/62363996-574cbc00-b518-11e9-9795-2a71dd1e9ee2.png">
 
 
-# Progress Tracking
+# Progress Tracking :chart_with_upwards_trend:
 - 9:30am - StandUp (setting daily goals, raising issues)
 - 2:00pm - StandUp (checking in, chat about what went well, setting goals for the rest of the afternoon)
 - 4:30pm - Retro (Feedback)
 
-## Monday (29.07)
+## Monday (29.07) 
 ### Meeting 1
 - Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper)
 - Writing out user stories
 - Creating issues for each user story, feature, etc.
 - Assigning pairs (Ben & Genny, Kareem & Anastasiia)
 - Setting up all the files for the project - FRAMEWORK
-### Afternoon Meeting
+
+### Afternoon Meeting 
 - Talk about databases, decide what ORM to use for the project
 - Assign tasks (Anstasiia - record the database setup instructions, Genny & Kareem - research DataMapper and add it to the project, Ben - work on Controller and View)
-### Retro
+
+### Retro :bar_chart:
 - Really bad times with DataMapper (setting up, configuring) -> will speak to one of the coaches on Tuesday morning.
 - Pretty sick README. 
 - View has been set up.
 - ***WHAT WENT WELL:*** 
-  - stunning View, 
-  - cool README 
+  - stunning View
+  - cool README :trollface:
   - great planning
   - created identical databases together to avoid any potential issues with it in a future.
 - ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** 
@@ -144,8 +146,10 @@ Foreign Key ```requests``` table, ```space_id```:
 ### Morning StandUp 
 - assigned pairs (Genny&Ben - listings, Anastasiia&Kareem - users).
 ### Afternooon StandUp
+
 - missed that one. Carried on working on assigned tasks.
-### Retro
+### Retro :bar_chart:
+
 - Managed to pass the tests but @user_name is not showing up on the page.
 - Tried to solve that problem as a group. Decided to look at it again tomorrow morning with fresh eyes.
 - ***WHAT WENT WELL:*** managed to get '/signup/new' working,
@@ -155,28 +159,34 @@ Foreign Key ```requests``` table, ```space_id```:
 ## Wednesday (31.07)
 ### Morning StandUp
 - assignned pairs and tasks
+
 ### Afternoon StandUp
-### Retro
-- ***WHAT WENT WELL:***
-- ***WHAT DID NOT GO SO WELL:***
+### Retro :bar_chart:
+
+- ***WHAT WENT WELL:*** :chicken::monkey::wolf:
+- ***WHAT DID NOT GO SO WELL:*** :bug::bug::bug:
 
 
 ## Thursday (01.08)
 ### Morning StandUp
-- assignned pairs and tasks
+- assignned pairs and tasks 
+
 ### Afternoon StandUp
-### Retro
-- ***WHAT WENT WELL:***
-- ***WHAT DID NOT GO SO WELL:***
+:gun::hocho::bomb:
+
+### Retro :bar_chart:
+- ***WHAT WENT WELL:*** :panda_face::panda_face::panda_face:
+- ***WHAT DID NOT GO SO WELL:*** :snail::snail::snail:
 
 
 ## Friday (02.08)
 ### Morning StandUp
 - assignned pairs and tasks
+
 ### Afternoon StandUp
 - did not have one. Just carried on working on the assigned tasks
 
-### Retro
+### Retro :bar_chart:
 - ***WHAT WENT WELL:*** 
   - fully fuctioning site
   - development process
