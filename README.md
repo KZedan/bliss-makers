@@ -116,14 +116,14 @@ Foreign Key ```requests``` table, ```space_id```:
 - 4:30pm - Retro (Feedback)
 
 ## Monday (29.07) :calendar:
-### Meeting 1
+### Meeting 1 :coffee:
 - Deciding what tech to use (Sinatra Framework, Ruby for backend, ORM - Datamapper)
 - Writing out user stories
 - Creating issues for each user story, feature, etc.
 - Assigning pairs (Ben & Genny, Kareem & Anastasiia)
 - Setting up all the files for the project - FRAMEWORK
 
-### Afternoon Meeting 
+### Afternoon Meeting 🍻
 - Talk about databases, decide what ORM to use for the project
 - Assign tasks (Anstasiia - record the database setup instructions, Genny & Kareem - research DataMapper and add it to the project, Ben - work on Controller and View)
 
@@ -142,9 +142,10 @@ Foreign Key ```requests``` table, ```space_id```:
 **EVERYONE IS HAPPY! :yellow_heart: :blue_heart: :purple_heart: :star: :boom: :fire:**
 
 ## Tuesday (30.07) :calendar:
-### Morning StandUp 
+### Morning StandUp :coffee:
 - assigned pairs (Genny&Ben - listings, Anastasiia&Kareem - users).
-### Afternooon StandUp
+
+### Afternooon StandUp 🍻
 
 - missed that one. Carried on working on assigned tasks.
 ### Retro :bar_chart:
@@ -155,20 +156,20 @@ Foreign Key ```requests``` table, ```space_id```:
 - ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:***  :exclamation::question::exclamation::question:
 
 ## Wednesday (31.07) :calendar:
-### Morning StandUp
+### Morning StandUp :coffee:
 - assignned pairs and tasks
 
-### Afternoon StandUp
+### Afternoon StandUp 🍻
 ### Retro :bar_chart:
 
 - ***WHAT WENT WELL:*** :chicken::monkey::wolf:
 - ***WHAT DID NOT GO SO WELL:*** :bug::bug::bug:
 
 ## Thursday (01.08) :calendar:
-### Morning StandUp
+### Morning StandUp :coffee:
 - assignned pairs and tasks 
 
-### Afternoon StandUp
+### Afternoon StandUp 🍻
 :gun::hocho::bomb:
 
 ### Retro :bar_chart:
@@ -176,10 +177,10 @@ Foreign Key ```requests``` table, ```space_id```:
 - ***WHAT DID NOT GO SO WELL:*** :snail::snail::snail:
 
 ## Friday (02.08) :calendar:
-### Morning StandUp
+### Morning StandUp :coffee:
 - assignned pairs and tasks
 
-### Afternoon StandUp
+### Afternoon StandUp 🍻
 - did not have one. Just carried on working on the assigned tasks
 
 ### Retro :bar_chart:
