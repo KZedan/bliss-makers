@@ -11,8 +11,26 @@ class Bliss < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+<<<<<<< HEAD
     redirect '/sessions/new'
+=======
+
   end
+
+
+  get '/spaces/:id/details' do
+    p "hey"
+    p @space = Space.get(params[:id])
+    p session[:space_id] = @space.id
+    session[:space_name] = @space.space_name
+    erb :space
+  end
+
+  post '/spaces/:id/details' do
+    redirect '/requests'
+>>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
+  end
+
 
   get '/sessions/new' do
     erb :login
@@ -55,9 +73,28 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
+<<<<<<< HEAD
   get '/spaces/new' do
     erb :new
+=======
+  get '/spaces/search' do
+    params[:from]
+    @user = User.get(session[:user_id])
+    @available_spaces = []
+    p @spaces = Space.all
+    @spaces.each do |space|
+      p dates = space.available_dates
+      dates.each do |date|
+        if date == params[:from]
+          @available_spaces << space
+        end
+        p @available_spaces
+      end
+    end
+    erb :search
+>>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
+
 
   post '/spaces' do
     Space.create(

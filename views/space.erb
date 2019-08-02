@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../../skeleton.css">
+  <link rel="stylesheet" type="text/css" href="../skeleton.css">
 </head>
 <body bgcolor="#ebe7dd">
 <div class="header-site">
@@ -27,7 +27,8 @@
     £<%= @space.price %> Price per Night
   </div>
 </div>
-  <center><form action="/requests/new" method="post">
+  <center><form action="/space/search">
     <br><input name="check_in_date" type="date" placeholder="Check in"/>
     <br><input type="submit" value="Request" />
     </form>
+  </body>
