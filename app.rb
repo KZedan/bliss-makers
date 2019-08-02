@@ -116,10 +116,10 @@ class Bliss < Sinatra::Base
   end
 
   get '/requests' do
-   p  @requests = Request.all
-   p @id_check = session[:user_id]
-   p @id_compare_space = session[:space_id]
-   p @id_compare = session[:user_id]
+   @requests = Request.all
+   @id_check = session[:user_id]
+   @id_compare_space = session[:space_id]
+   @id_compare = session[:user_id]
    erb :requests
   end
 
@@ -132,6 +132,11 @@ class Bliss < Sinatra::Base
       :check_in => session[:check_in],
       :confirmed => false
     )
+    redirect ('/requests/load')
+  end
+
+  get '/requests/load' do
+    redirect ('/requests')
   end
 
   post '/requests/confirm' do

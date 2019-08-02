@@ -45,7 +45,6 @@
           <div class="one-half column value">
             <h4>Requests I've recieved</h4>
             <% @requests.each do |request| %>
-
             <% if request.space_id == @id_compare_space %>
             <div class="containerrequest">
             <%= request.space_name %> <%= request.confirmed %><br>
