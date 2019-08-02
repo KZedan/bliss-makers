@@ -74,10 +74,6 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
-  get '/spaces/search' do
-
-  end
-
   get '/spaces/new' do
     erb :new
   end
@@ -154,6 +150,7 @@ class Bliss < Sinatra::Base
   end
 
   get '/logout' do
+    redirect ('/')
 
   end
 
