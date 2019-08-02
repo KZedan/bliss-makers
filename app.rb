@@ -38,7 +38,7 @@ class Bliss < Sinatra::Base
 
   # Authenticates the users login details, flash warning if issue
   post '/sessions' do
-    user = User.authenticate(params[:email])
+    user = User.authenticate(params[:email], params[:password])
 
     if user
       session[:user_id] = user.id
@@ -57,8 +57,8 @@ class Bliss < Sinatra::Base
 
 
   post '/signup/new' do
-   p encrypted_password = BCrypt::Password.create(params[:password])
-    p user = User.create(
+   encrypted_password = BCrypt::Password.create(params[:password])
+    user = User.create(
       :user_name => params[:user_name],
       :email => params[:email],
       :password => encrypted_password
@@ -85,7 +85,7 @@ class Bliss < Sinatra::Base
   get '/spaces/search' do
     params[:from]
     @user = User.get(session[:user_id])
-    p @available_spaces = []
+    @available_spaces = []
     @spaces = Space.all
     @spaces.each do |space|
       dates = space.available_dates
@@ -132,7 +132,7 @@ class Bliss < Sinatra::Base
   end
 
   post '/requests/new' do
-    p session[:check_in] = params[:check_in_date]
+    session[:check_in] = params[:check_in_date]
     Request.create(
       :space_name => session[:space_name],
       :user_id => session[:user_id],
@@ -148,7 +148,7 @@ class Bliss < Sinatra::Base
   end
 
   post '/requests/confirm' do
-    p space_edit = Request.all(:space_id => session[:space_id])
+    space_edit = Request.all(:space_id => session[:space_id])
     space_edit.update(:confirmed => true)
     redirect ('/requests')
   end
