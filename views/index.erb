@@ -1,6 +1,4 @@
 
-
-
 <!Doctype html>
 <html>
 <head>
@@ -13,7 +11,6 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script
-  <script type="text/javascript" src="./Public/interface.js"></script>
 
 
 </head>
@@ -45,7 +42,6 @@
       <input type="submit" value="Search" />
       </form>
 
-      <% if @available_dates == nil %>
         <% @spaces.each do |space| %>
         <div class="container">
                  <div align="center" class="one-third column value" nowrap>
@@ -59,19 +55,5 @@
                 </div>
             </div>
         <% end %>
-      <% else %>
-        <% @available_spaces.each do |space| %>
-        <div class="container">
-                 <div align="center" class="one-third column value" nowrap>
-                <font size="3"><%= space.space_name %>
-                </div>
-                <div align="left" class="one-third column value" nowrap style="line-height:1.0; font-size: 8px;">
-                <i><font size="1"><%= space.description %></i>
-                </div>
-                <div align="right" class="end-small columnn value" nowrap >
-                <br>£<%= space.price %> per night.
-                </div>
-            </div>
-        <%end %>
-      <% end %>
+      
 </body>
