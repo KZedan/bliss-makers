@@ -66,9 +66,12 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 8. Add a new table named ```users``` to ```bliss``` database.
 9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
 10. Add a new table named ```spaces``` to ```bliss``` database.
-11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
-12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
-13. Upload/Save all the changes.
+11. Add ```space_name```, ```description```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
+12. Add a new table named ```requests``` to ```bliss``` database.
+13. Add ```user_id```, ```space_id```, ```check_in```, ```confirmed``` to **column_name**. Add ```int4```, ```int4```, ```date```, ```bool``` to **data_type** respectively.
+14. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
+15. Add FOREIGN KEYS ```requests``` -> add a foreign key to ```user_id``` and ```space_id```. (See images below for reference)
+16. Upload/Save all the changes.
 ## Database ```bliss_test```
 1. Connect to ```psql``` in Terminal -> ```psql postgres```
 3. Create a databse ```bliss_test``` -> ```CREATE DATABASE bliss_test;```
@@ -79,10 +82,12 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 8. Add a new table named ```users``` to ```bliss_test``` database.
 9. Add ```user_name```, ```email```, ```password``` to **column_name**. Add ```varchar(60)```, ```varchar(120)```, ```varchar(120)``` to **data_type** respectively.
 10. Add a new table named ```spaces``` to ```bliss_test``` database.
-11. Add ```space_name```, ```discription```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
-12. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
-13. Upload/Save all the changes.
-
+11. Add ```space_name```, ```description```, ```price``` to **column_name**. Add ```varchar(120)```, ```varchar(500)```, ```int4``` to **data_type** respectively.
+12. Add a new table named ```requests``` to ```bliss_test``` database.
+13. Add ```user_id```, ```space_id```, ```check_in```, ```confirmed``` to **column_name**. Add ```int4```, ```int4```, ```date```, ```bool``` to **data_type** respectively.
+14. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
+15. Add FOREIGN KEYS ```requests``` -> add a foreign key to ```user_id``` and ```space_id```. (See images below for reference)
+16. Upload/Save all the changes.
 ```users``` table reference:
 <img width="850" alt="users table" src="https://user-images.githubusercontent.com/42152431/62059827-de99e700-b21b-11e9-95a6-e35a2e98aade.png">
 ```spaces``` table reference:
