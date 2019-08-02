@@ -129,8 +129,13 @@ Foreign Key ```requests``` table, ```space_id```:
 - Really bad times with DataMapper (setting up, configuring) -> will speak to one of the coaches on Tuesday morning.
 - Pretty sick README. 
 - View has been set up.
-- ***WHAT WENT WELL:*** stunning View, cool README, great planning, created identical databases together to avoid any potential issues with it in a future.
-- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** branching and merging without crashing -> will speak to the coach to double check.
+- ***WHAT WENT WELL:*** 
+  - stunning View, 
+  - cool README 
+  - great planning
+  - created identical databases together to avoid any potential issues with it in a future.
+- ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** 
+  - branching and merging without crashing -> will speak to the coach to double check.
 
 **EVERYONE IS HAPPY! :yellow_heart: :blue_heart: :purple_heart: :star: :boom: :fire:**
 
