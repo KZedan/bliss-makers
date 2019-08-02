@@ -43,6 +43,10 @@
       <input type="submit" value="Search" />
       </form>
 
+      <center><h4>
+        <%= flash[:notice] %>
+      </h4>
+
 
       <% @spaces.each do |space| %>
       <div class="container">

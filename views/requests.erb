@@ -42,6 +42,10 @@
           </div>
           </div>
 
+          <center><h2>
+            <%= flash[:notice] %>
+          </h2>
+
           <div class="one-half column value">
             <h4>Requests I've recieved</h4>
             <% @requests.each do |request| %>
