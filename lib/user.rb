@@ -1,5 +1,6 @@
 
 require 'data_mapper'
+require 'bcrypt'
 
 class User
   include DataMapper::Resource
@@ -7,7 +8,7 @@ class User
   property :id,         Serial 
   property :user_name,      String  
   property :email,       String      
-  property :password, String   
+  property :password, BCryptHash
 
   has n, :spaces
 
@@ -24,4 +25,6 @@ class User
   def id
     return self[:id]
   end
+
+
 end
