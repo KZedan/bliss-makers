@@ -145,6 +145,27 @@ Foreign Key ```requests``` table, ```space_id```:
 - Tried to solve that problem as a group. Decided to look at it again tomorrow morning with fresh eyes.
 - ***WHAT WENT WELL:*** managed to get '/signup/new' working,
 - ***WHAT DID NOT GO SO WELL AND/OR RAISED QUESTIONS:*** 
+
+
 ## Wednesday (31.07)
+### Morning StandUp
+### Afternoon StandUp
+### Retro
+- ***WHAT WENT WELL:***
+- ***WHAT DID NOT GO SO WELL:***
+
+
 ## Thursday (01.08)
+### Morning StandUp
+### Afternoon StandUp
+### Retro
+- ***WHAT WENT WELL:***
+- ***WHAT DID NOT GO SO WELL:***
+
+
 ## Friday (02.08)
+### Morning StandUp
+### Afternoon StandUp
+### Retro
+- ***WHAT WENT WELL:***
+- ***WHAT DID NOT GO SO WELL:***
