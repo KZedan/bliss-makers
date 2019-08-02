@@ -29,4 +29,14 @@ class User
   def space_id
     return self[:space_id]
   end
+
+  def password
+    return self[:password]
+  end
+
+  def self.authenticate(email, password)
+    user = last(:email => email)
+    return user unless BCrypt::Password.new(user.password) != password
+  end
+
 end
