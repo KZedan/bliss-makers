@@ -89,7 +89,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 15. Add FOREIGN KEYS to ```requests``` -> add a foreign key to ```user_id``` and ```space_id```. (See images below for reference)
 16. Upload/Save all the changes.
 
-##DATABASE SET UP REFERENCES:
+## DATABASE SET UP REFERENCES:
 
 ```users``` table reference:
 <img width="850" alt="users table" src="https://user-images.githubusercontent.com/42152431/62059827-de99e700-b21b-11e9-95a6-e35a2e98aade.png">
