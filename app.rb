@@ -98,6 +98,8 @@ class Bliss < Sinatra::Base
       :space_name => params[:space_name],
       :description => params[:description],
       :price => params[:price],
+      :available_from => params[:available_from],
+      :available_to => params[:available_to],
       :user_id => session[:user_id],
     )
     redirect '/spaces'
