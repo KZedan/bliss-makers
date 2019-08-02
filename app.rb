@@ -7,7 +7,9 @@ require_relative './lib/space'
 require_relative './lib/request'
 
 class Bliss < Sinatra::Base
+
   enable :sessions
+
   register Sinatra::Flash
 
   get '/' do
@@ -132,6 +134,12 @@ class Bliss < Sinatra::Base
       :check_in => session[:check_in],
       :confirmed => false
     )
+  end
+
+  post '/requests/confirm' do
+    p space_edit = Request.all(:space_id => session[:space_id])
+    space_edit.update(:confirmed => true)
+    redirect ('/requests')
   end
 
   get '/logout' do
