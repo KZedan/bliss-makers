@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="skeleton.css">
 </head>
-<body>
+<body bgcolor="#ebe7dd">
 <div class="header-site">
   <br>
 
@@ -23,23 +23,35 @@
   </div>
 
 
-<div class="section values">
+<div class="section values" >
 
-      <div class="row">
+
         <div class="one-half column value">
-          <h2>Requests I've made</h2>
+          <h4>Requests I've made</h4>
           <% @requests.each do |request| %>
-          <% if request.user_id == @id_compare %>
+          <% if request.user_id == @id_check %>
+          <div class="container">
           <%= request.space_name %> <%= request.confirmed %><br>
+          </div>
           <% end %>
 
           <% end %>
+
         </div>
         </div>
 
         <div class="one-half column value">
-          <h2>Requests I've recieved</h2>
-          
+          <h4>Requests I've recieved</h4>
+          <% @requests.each do |request| %>
+
+          <% if request.space_id == @id_compare_space %>
+          <div class="container">
+          <%= request.space_name %> <%= request.confirmed %><br>
+          </div>
+          <% end %>
+
+          <% end %>
         </div>
-      </div>
+
+
       </body>

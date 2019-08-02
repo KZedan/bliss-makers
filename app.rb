@@ -11,6 +11,66 @@ class Bliss < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+    redirect '/sessions/new'
+  end
+
+  get '/sessions/new' do
+    erb :login
+  end
+
+  # Authenticates the users login details, flash warning if issue
+  post '/sessions' do
+    user = User.authenticate(params[:email])
+
+    if user
+      session[:user_id] = user.id
+      session[:space_id] = user.space_id
+      user = User.last(:email => params[:email])
+      redirect '/spaces'
+    else
+      flash[:notice] = 'Please check your email and/or password.'
+      redirect '/sessions/new'
+    end
+  end
+
+  get '/signup' do
+    erb :signup
+  end
+
+
+  post '/signup/new' do
+    user = User.create(
+      :user_name => params[:user_name],
+      :email => params[:email],
+      :password => params[:password],
+    )
+  session[:user_id] = user.id
+  redirect '/spaces'
+  end
+
+  get '/spaces' do
+    @user = User.get(session[:user_id])
+    @user_space = User.get(session[:space_name])
+    @spaces = Space.all
+  erb :index
+  end
+
+  get '/spaces/new' do
+    erb :new
+  end
+
+  post '/spaces' do
+    Space.create(
+      :space_name => params[:space_name],
+      :description => params[:description],
+      :price => params[:price],
+      :user_id => session[:user_id],
+    )
+    redirect '/spaces'
+  end
+
+  get '/spaces/search' do
+    p params[:from]
 
   end
 
@@ -26,66 +86,11 @@ class Bliss < Sinatra::Base
     redirect '/requests'
   end
 
-  get '/sessions/new' do
-    erb :login
-  end
-
-  post '/sessions' do
-    user = User.authenticate(params[:email])
-
-    if user
-      session[:user_id] = user.id
-      user = User.last(:email => params[:email])
-      redirect '/spaces'
-    else
-      flash[:notice] = 'Please check your email and/or password.'
-      redirect '/sessions/new'
-    end
-  end
-
-  get '/signup' do
-    erb :signup
-  end
-
-  post '/signup/new' do
-    user = User.create(
-      :user_name => params[:user_name],
-      :email => params[:email],
-      :password => params[:password],
-    )
-  session[:user_id] = user.id
-  redirect '/spaces'
-  end
-
-  get '/spaces' do
-    @user = User.get(session[:user_id])
-    @spaces = Space.all
-  erb :index
-  end
-
-  get '/spaces/search' do
-    p params[:from]
-
-  end
-
-  post '/spaces' do
-    Space.create(
-      :space_name => params[:space_name],
-      :description => params[:description],
-      :price => params[:price],
-      :user_id => session[:user_id],
-    )
-    redirect '/spaces'
-  end
-
-  get '/spaces/new' do
-    erb :new
-  end
-
   get '/requests' do
    p  @requests = Request.all
+   p @id_check = session[:user_id]
+   p @id_compare_space = session[:space_id]
    p @id_compare = session[:user_id]
-   
    erb :requests
   end
 
@@ -100,15 +105,9 @@ class Bliss < Sinatra::Base
     )
   end
 
-
   get '/logout' do
 
   end
-
-  # temp route for dev
-  # get '/details' do
-  #   erb :space
-  # end
 
   run! if app_file == $0
 end

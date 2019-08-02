@@ -82,6 +82,24 @@
   color: white;
 }
 
+.containers {
+  border-radius: 25px;
+  background-image: url("module_bg.jpg");
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 60px;
+  box-sizing: border-box;
+  box-shadow: 2px 3px;
+  vertical-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
 .column,
 .columns {
   width: 100%;

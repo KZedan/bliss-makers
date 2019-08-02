@@ -62,9 +62,7 @@
   margin-bottom: 30px;
 
 }
-
-
-.container {
+.containers {
   border-radius: 25px;
   background-image: url("module_bg.jpg");
   position: relative;
@@ -82,7 +80,7 @@
   color: white;
 }
 
-.containers {
+.container {
   border-radius: 25px;
   background-image: url("module_bg.jpg");
   position: relative;
@@ -145,7 +143,8 @@
   .two-thirds.column              { width: 65.3333333333%; }
 
   .one-half.column                { width: 48%;
-  font-size: 10px;}
+                                    font-size: 10px;
+                                  }
 
   /* Offsets */
   .offset-by-one.column,
