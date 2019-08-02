@@ -88,6 +88,7 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 14. Add a FOREIGN KEY to ```spaces``` -> add ```user_id``` to **column_name** on row 5, add ```int4``` to **data_type**, press ```->``` in **foreign_key** column on row 5. Write ```user_id``` in ```Columns```, ```id``` in ```Referenced Columns```, select ```users``` in ```Referenced Table```.
 15. Add FOREIGN KEYS to ```requests``` -> add a foreign key to ```user_id``` and ```space_id```. (See images below for reference)
 16. Upload/Save all the changes.
+
 ##DATABASE SET UP REFERENCES:
 
 ```users``` table reference:
