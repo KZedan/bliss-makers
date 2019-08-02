@@ -194,3 +194,7 @@ Foreign Key ```requests``` table, ```space_id```:
   - conflict handling
   - testing (TDD)
   - refactoring
+  
+  # Feedback
+  - We are very happy of what we have accomplished in a given timeframe 
+  - Feeling proud :blush:
