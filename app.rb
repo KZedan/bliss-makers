@@ -18,9 +18,8 @@ class Bliss < Sinatra::Base
 
 
   get '/spaces/:id/details' do
-    p "hey"
-    p @space = Space.get(params[:id])
-    p session[:space_id] = @space.id
+    @space = Space.get(params[:id])
+    session[:space_id] = @space.id
     session[:space_name] = @space.space_name
     erb :space
   end
@@ -79,7 +78,7 @@ class Bliss < Sinatra::Base
   get '/spaces/search' do
     params[:from]
     @user = User.get(session[:user_id])
-    p @available_spaces = []
+    @available_spaces = []
     @spaces = Space.all
     @spaces.each do |space|
       dates = space.available_dates
@@ -126,15 +125,23 @@ class Bliss < Sinatra::Base
   end
 
   post '/requests/new' do
-    p session[:check_in] = params[:check_in_date]
-    Request.create(
-      :space_name => session[:space_name],
-      :user_id => session[:user_id],
-      :space_id => session[:space_id],
-      :check_in => session[:check_in],
-      :confirmed => false
-    )
-    redirect ('/requests/load')
+    session[:check_in] = params[:check_in_date]
+    p params
+    p space = Space.get(session[:space_id])
+    if space.available_dates.include?(session[:check_in])
+      Request.create(
+        :space_name => session[:space_name],
+        :user_id => session[:user_id],
+        :space_id => session[:space_id],
+        :check_in => session[:check_in],
+        :confirmed => false
+      )
+      redirect ('/requests/load')
+
+    else
+      flash[:notice] = 'Listing is not available on this date.'
+      redirect '/spaces'
+    end
   end
 
   get '/requests/load' do
@@ -142,7 +149,7 @@ class Bliss < Sinatra::Base
   end
 
   post '/requests/confirm' do
-    p space_edit = Request.all(:space_id => session[:space_id])
+    space_edit = Request.all(:space_id => session[:space_id])
     space_edit.update(:confirmed => true)
     redirect ('/requests')
   end
