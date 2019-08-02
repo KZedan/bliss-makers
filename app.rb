@@ -11,6 +11,9 @@ class Bliss < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+<<<<<<< HEAD
+    redirect '/sessions/new'
+=======
 
   end
 
@@ -25,6 +28,7 @@ class Bliss < Sinatra::Base
 
   post '/spaces/:id/details' do
     redirect '/requests'
+>>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
 
 
@@ -32,11 +36,13 @@ class Bliss < Sinatra::Base
     erb :login
   end
 
+  # Authenticates the users login details, flash warning if issue
   post '/sessions' do
     user = User.authenticate(params[:email])
 
     if user
       session[:user_id] = user.id
+      session[:space_id] = user.space_id
       user = User.last(:email => params[:email])
       redirect '/spaces'
     else
@@ -48,6 +54,7 @@ class Bliss < Sinatra::Base
   get '/signup' do
     erb :signup
   end
+
 
   post '/signup/new' do
     user = User.create(
@@ -61,10 +68,15 @@ class Bliss < Sinatra::Base
 
   get '/spaces' do
     @user = User.get(session[:user_id])
+    @user_space = User.get(session[:space_name])
     @spaces = Space.all
   erb :index
   end
 
+<<<<<<< HEAD
+  get '/spaces/new' do
+    erb :new
+=======
   get '/spaces/search' do
     params[:from]
     @user = User.get(session[:user_id])
@@ -80,6 +92,7 @@ class Bliss < Sinatra::Base
       end
     end
     erb :search
+>>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
 
 
@@ -93,14 +106,32 @@ class Bliss < Sinatra::Base
     redirect '/spaces'
   end
 
-  get '/spaces/new' do
-    erb :new
+  get '/spaces/search' do
+    p params[:from]
+
+  end
+
+  get '/spaces/:id/details' do
+    p "hey"
+    p @space = Space.get(params[:id])
+    p session[:space_id] = @space.id
+    session[:space_name] = @space.space_name
+    erb :space
+  end
+
+  post '/spaces/:id/details' do
+    redirect '/requests'
   end
 
   get '/requests' do
    p  @requests = Request.all
+   p @id_check = session[:user_id]
+   p @id_compare_space = session[:space_id]
    p @id_compare = session[:user_id]
+<<<<<<< HEAD
 
+=======
+>>>>>>> f68a8b420347c1a0f6c507803ccb9f5dc925490d
    erb :requests
   end
 
@@ -115,15 +146,9 @@ class Bliss < Sinatra::Base
     )
   end
 
-
   get '/logout' do
 
   end
-
-  # temp route for dev
-  # get '/details' do
-  #   erb :space
-  # end
 
   run! if app_file == $0
 end
