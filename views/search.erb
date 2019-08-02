@@ -54,6 +54,11 @@
                 <div align="right" class="end-small columnn value" nowrap >
                 <br>£<%= space.price %> per night.
                 </div>
+
+          <form action="/spaces/<%= space.id %>/details" method="get">
+            <input type="submit" value="Details" />
+            </form>
+
             </div>
         <%end %>
 </body>
