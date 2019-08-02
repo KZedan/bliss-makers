@@ -26,5 +26,7 @@ class User
     return self[:id]
   end
 
-
+  def space_id
+    return self[:space_id]
+  end
 end
