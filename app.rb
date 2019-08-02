@@ -132,8 +132,8 @@ class Bliss < Sinatra::Base
 
   post '/requests/new' do
     session[:check_in] = params[:check_in_date]
-    p params
-    p space = Space.get(session[:space_id])
+    params
+    space = Space.get(session[:space_id])
     if space.available_dates.include?(session[:check_in])
       Request.create(
         :space_name => session[:space_name],
