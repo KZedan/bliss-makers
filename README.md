@@ -91,14 +91,19 @@ I will still be able to book somewhere that has not yet been confirmed by the ow
 
 ```users``` table reference:
 <img width="850" alt="users table" src="https://user-images.githubusercontent.com/42152431/62059827-de99e700-b21b-11e9-95a6-e35a2e98aade.png">
+
 ```spaces``` table reference:
 <img width="890" alt="spaces table" src="https://user-images.githubusercontent.com/42152431/62059825-de99e700-b21b-11e9-88e8-562cbff99012.png">
+
 ```requests``` table reference:
 <img width="995" alt="requests" src="https://user-images.githubusercontent.com/42152431/62363998-574cbc00-b518-11e9-9177-87910824b39b.png">
+
 Foreign Key ```spaces``` table:
 <img width="388" alt="foreign key in spaces table" src="https://user-images.githubusercontent.com/42152431/62059824-de99e700-b21b-11e9-89aa-00b695548a75.png">
+
 Foreign Key ```requests``` table, ```user_id```:
 <img width="388" alt="fk user_id" src="https://user-images.githubusercontent.com/42152431/62363997-574cbc00-b518-11e9-9403-04dbb5aece1f.png">
+
 Foreign Key ```requests``` table, ```space_id```:
 <img width="390" alt="fk space_d" src="https://user-images.githubusercontent.com/42152431/62363996-574cbc00-b518-11e9-9795-2a71dd1e9ee2.png">
 
