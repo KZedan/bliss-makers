@@ -11,10 +11,7 @@ class Bliss < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
-<<<<<<< HEAD
     redirect '/sessions/new'
-=======
-
   end
 
 
@@ -28,7 +25,6 @@ class Bliss < Sinatra::Base
 
   post '/spaces/:id/details' do
     redirect '/requests'
->>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
 
 
@@ -73,28 +69,29 @@ class Bliss < Sinatra::Base
   erb :index
   end
 
-<<<<<<< HEAD
+
   get '/spaces/new' do
     erb :new
-=======
+  end
+
   get '/spaces/search' do
     params[:from]
     @user = User.get(session[:user_id])
-    @available_spaces = []
-    p @spaces = Space.all
+    p @available_spaces = []
+    @spaces = Space.all
     @spaces.each do |space|
-      p dates = space.available_dates
+      p "------------------  #{space.id}  ------------------"
+      p "------------------  #{space.space_name}  ------------------"
+      dates = space.available_dates
       dates.each do |date|
         if date == params[:from]
           @available_spaces << space
         end
-        p @available_spaces
+        @available_spaces
       end
     end
     erb :search
->>>>>>> 40d9e67e3431fd712a78af0c7173070e6054e8fa
   end
-
 
   post '/spaces' do
     Space.create(
@@ -106,15 +103,10 @@ class Bliss < Sinatra::Base
     redirect '/spaces'
   end
 
-  get '/spaces/search' do
-    p params[:from]
-
-  end
 
   get '/spaces/:id/details' do
-    p "hey"
-    p @space = Space.get(params[:id])
-    p session[:space_id] = @space.id
+    @space = Space.get(params[:id])
+    session[:space_id] = @space.id
     session[:space_name] = @space.space_name
     erb :space
   end
@@ -128,10 +120,6 @@ class Bliss < Sinatra::Base
    p @id_check = session[:user_id]
    p @id_compare_space = session[:space_id]
    p @id_compare = session[:user_id]
-<<<<<<< HEAD
-
-=======
->>>>>>> f68a8b420347c1a0f6c507803ccb9f5dc925490d
    erb :requests
   end
 
