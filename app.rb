@@ -37,7 +37,7 @@ class Bliss < Sinatra::Base
     erb :signup
   end
 
-  
+
   post '/signup/new' do
     user = User.create(
       :user_name => params[:user_name],
@@ -90,6 +90,7 @@ class Bliss < Sinatra::Base
    p  @requests = Request.all
    p @id_check = session[:user_id]
    p @id_compare_space = session[:space_id]
+   p @id_compare = session[:user_id]
    erb :requests
   end
 

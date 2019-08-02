@@ -8,8 +8,8 @@ class Space
     property :description,       Text
     property :price, Integer
     property :user_id, Integer
-    property :available_date, DateTime
-
+    property :available_from, Date
+    property :available_to, Date
     belongs_to :user
 
     def space_name
@@ -23,4 +23,8 @@ class Space
     def price
       return self[:price]
     end
-  end
+    
+    def available_dates
+      @available_dates = Array(available_from...available_to).map {|date| date.strftime("%Y-%m-%d")}
+    end
+end

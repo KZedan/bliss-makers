@@ -1,6 +1,7 @@
 require 'data_mapper'
+require 'database_cleaner'
 
-env = ENV['RACK_ENV'] || ""
+env = ENV['RACK_ENV'] || "_test"
 
 # # we're telling datamapper to use a postgres database on localhost. The name will be "bookmark_manager_test" or "bookmark_manager_development" depending on the environment
 DataMapper.setup(:default, "postgres://localhost/bliss#{env}")
@@ -15,3 +16,6 @@ DataMapper.finalize
 
 # # However, the database tables don't exist yet. Let's tell datamapper to create them
 DataMapper.auto_upgrade!
+
+## Cleaning the database before each test
+DatabaseCleaner.strategy = :truncation
