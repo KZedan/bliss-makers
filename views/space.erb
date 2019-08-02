@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="skeleton.css">
+  <link rel="stylesheet" type="text/css" href="../../skeleton.css">
 </head>
 <body>
 <div class="header-site">
@@ -18,20 +18,16 @@
       </div>
     </div>
   </div>
-  <center><h1><br> Space ID </h1></center>
+  <center><h1><br> <%= @space.space_name %></h1></center>
   </div>
   <div class="w3-container">
-  <h2>space_name</h2>
-  <p>Description of the space</p>
+  <p><%= @space.description %></p>
 
   <div class="w3-panel w3-blue w3-card-4">
-    <p>Price.</p>
+    £<%= @space.price %> Price per Night
   </div>
 </div>
-  <center><form action="/request/new" method="post">
-    <input name="user_name" type="text" placeholder="Your name"/>
-    <input name="email" type="email" placeholder="Your email"/>
+  <center><form action="/requests/new" method="post">
     <br><input name="check_in_date" type="date" placeholder="Check in"/>
-    <br><input name="check_out_date" type="date" placeholder="Check out"/>
     <br><input type="submit" value="Request" />
     </form>

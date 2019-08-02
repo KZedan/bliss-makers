@@ -1,9 +1,10 @@
 require 'sinatra/base'
 require 'data_mapper'
 require 'sinatra/flash'
-require_relative './data_mapper_setup.rb'
-require_relative './lib/user.rb'
-require_relative './lib/space.rb'
+require_relative './data_mapper_setup'
+require_relative './lib/user'
+require_relative './lib/space'
+require_relative './lib/request'
 
 class Bliss < Sinatra::Base
   enable :sessions
@@ -13,13 +14,19 @@ class Bliss < Sinatra::Base
 
   end
 
-  # get '/spaces/:id' do
-  #   erb :details
-  # end
-  #
-  # # post '/spaces/:id' do
-  # #   redirect '/requests'
-  # # end
+
+  get '/spaces/:id/details' do
+    p "hey"
+    p @space = Space.get(params[:id])
+    p session[:space_id] = @space.id
+    session[:space_name] = @space.space_name
+    erb :space
+  end
+
+  post '/spaces/:id/details' do
+    redirect '/requests'
+  end
+
 
   get '/sessions/new' do
     erb :login
@@ -91,19 +98,32 @@ class Bliss < Sinatra::Base
   end
 
   get '/requests' do
-    erb :requests
+   p  @requests = Request.all
+   p @id_compare = session[:user_id]
+   
+   erb :requests
   end
+
+  post '/requests/new' do
+    p session[:check_in] = params[:check_in_date]
+    Request.create(
+      :space_name => session[:space_name],
+      :user_id => session[:user_id],
+      :space_id => session[:space_id],
+      :check_in => session[:check_in],
+      :confirmed => false
+    )
+  end
+
 
   get '/logout' do
 
   end
 
   # temp route for dev
-  get '/details' do
-    erb :space
-  end
-
-
+  # get '/details' do
+  #   erb :space
+  # end
 
   run! if app_file == $0
 end
