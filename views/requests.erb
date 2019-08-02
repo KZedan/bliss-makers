@@ -29,11 +29,12 @@
         <div class="one-half column value">
           <h4>Requests I've made</h4>
           <% @requests.each do |request| %>
-          <div class="container">
           <% if request.user_id == @id_check %>
+          <div class="container">
           <%= request.space_name %> <%= request.confirmed %><br>
-          <% end %>
           </div>
+          <% end %>
+
           <% end %>
 
         </div>
@@ -48,6 +49,7 @@
           <%= request.space_name %> <%= request.confirmed %><br>
           </div>
           <% end %>
+
           <% end %>
         </div>
 
