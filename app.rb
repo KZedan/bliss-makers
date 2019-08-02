@@ -14,6 +14,7 @@ class Bliss < Sinatra::Base
 
   end
 
+
   get '/spaces/:id/details' do
     p "hey"
     p @space = Space.get(params[:id])
@@ -25,6 +26,7 @@ class Bliss < Sinatra::Base
   post '/spaces/:id/details' do
     redirect '/requests'
   end
+
 
   get '/sessions/new' do
     erb :login
@@ -64,9 +66,22 @@ class Bliss < Sinatra::Base
   end
 
   get '/spaces/search' do
-    p params[:from]
-
+    params[:from]
+    @user = User.get(session[:user_id])
+    @available_spaces = []
+    p @spaces = Space.all
+    @spaces.each do |space|
+      p dates = space.available_dates
+      dates.each do |date|
+        if date == params[:from]
+          @available_spaces << space
+        end
+        p @available_spaces
+      end
+    end
+    erb :search
   end
+
 
   post '/spaces' do
     Space.create(

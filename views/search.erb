@@ -2,7 +2,7 @@
 <!Doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="skeleton.css">
+  <link rel="stylesheet" type="text/css" href="../skeleton.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bliss</title>
@@ -36,31 +36,24 @@
 
 
     <center><h2> Listings </h2></center>
-    <center><form action="spaces/search">
+    <center><form action="/spaces/search">
       Check-in date
       <input type="date" id="from" name="from">
       <input type="submit" value="Search" />
       </form>
 
 
-      <% @spaces.each do |space| %>
-      <div class="container">
-
-               <div align="center" class="one-third column value" nowrap>
-              <font size="3"><%= space.space_name %>
-              </div>
-              <div align="left" class="one-third column value" nowrap style="line-height:1.0; font-size: 8px;">
-              <i><font size="1"><%= space.description %></i>
-              </div>
-              <div align="right" class="end-small columnn value" nowrap >
-              <br>£<%= space.price %> per night.
-              </div>
-
-          </div>
-          <form action="/spaces/<%= space.id %>/details" method="get">
-            <input type="submit" value="Details" />
-            </form>
-
-      <% end %>
-
+        <% @available_spaces.each do |space| %>
+        <div class="container">
+                 <div align="center" class="one-third column value" nowrap>
+                <font size="3"><%= space.space_name %>
+                </div>
+                <div align="left" class="one-third column value" nowrap style="line-height:1.0; font-size: 8px;">
+                <i><font size="1"><%= space.description %></i>
+                </div>
+                <div align="right" class="end-small columnn value" nowrap >
+                <br>£<%= space.price %> per night.
+                </div>
+            </div>
+        <%end %>
 </body>
