@@ -26,43 +26,38 @@
   </div>
 
 
-<div class="section values" >
-        <div class="one-half column value">
-          <h4>Requests I've made</h4>
-          <% @requests.each do |request| %>
-          <% if request.user_id == @id_check %>
-          <div class="containerrequest">
-          <%= request.space_name %> <%= request.confirmed %><br>
+  <div class="section values" >
+          <div class="one-half column value">
+            <h4>Requests I've made</h4>
+            <% @requests.each do |request| %>
+            <% if request.user_id == @id_check %>
+            <div class="containerrequest">
+            <%= request.space_name %> <%= request.confirmed %><br>
+            </div>
+
+            <% end %>
+
+            <% end %>
+
+          </div>
           </div>
 
-          <% end %>
+          <div class="one-half column value">
+            <h4>Requests I've recieved</h4>
+            <% @requests.each do |request| %>
 
-          <% end %>
+            <% if request.space_id == @id_compare_space %>
+            <div class="containerrequest">
+            <%= request.space_name %> <%= request.confirmed %><br>
+            </div>
+            <center><form action="/requests/confirm" method="post">
+              <input type="hidden" name="_method" value="PATCH" />
+              <input type="submit" value="Confirm" />
+              </form>
+            <% end %>
 
-        </div>
-        </div>
-
-        <div class="one-half column value">
-<<<<<<< HEAD
-          <h2>Requests I've recieved</h2>
-
-=======
-          <h4>Requests I've recieved</h4>
-          <% @requests.each do |request| %>
-
-          <% if request.space_id == @id_compare_space %>
-          <div class="containerrequest">
-          <%= request.space_name %> <%= request.confirmed %><br>
+            <% end %>
           </div>
-          <center><form action="/requests/confirm" method="post">
-            <input type="hidden" name="_method" value="PATCH" />
-            <input type="submit" value="Confirm" />
-            </form>
-          <% end %>
-
-          <% end %>
->>>>>>> f68a8b420347c1a0f6c507803ccb9f5dc925490d
-        </div>
 
 
-      </body>
+        </body>

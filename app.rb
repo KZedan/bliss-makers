@@ -82,8 +82,6 @@ class Bliss < Sinatra::Base
     p @available_spaces = []
     @spaces = Space.all
     @spaces.each do |space|
-      p "------------------  #{space.id}  ------------------"
-      p "------------------  #{space.space_name}  ------------------"
       dates = space.available_dates
       dates.each do |date|
         if date == params[:from]
