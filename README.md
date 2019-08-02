@@ -149,6 +149,7 @@ Foreign Key ```requests``` table, ```space_id```:
 
 ## Wednesday (31.07)
 ### Morning StandUp
+- assignned pairs and tasks
 ### Afternoon StandUp
 ### Retro
 - ***WHAT WENT WELL:***
@@ -157,6 +158,7 @@ Foreign Key ```requests``` table, ```space_id```:
 
 ## Thursday (01.08)
 ### Morning StandUp
+- assignned pairs and tasks
 ### Afternoon StandUp
 ### Retro
 - ***WHAT WENT WELL:***
@@ -165,7 +167,25 @@ Foreign Key ```requests``` table, ```space_id```:
 
 ## Friday (02.08)
 ### Morning StandUp
+- assignned pairs and tasks
 ### Afternoon StandUp
+- did not have one. Just carried on working on the assigned tasks
+
 ### Retro
-- ***WHAT WENT WELL:***
+- ***WHAT WENT WELL:*** 
+  - fully fuctioning site
+  - development process
+  - we had fun
+  - the site looks nice
+  - ORM - learned how to use it
+  - managed to do a **LOT** in a short time
+  
 - ***WHAT DID NOT GO SO WELL:***
+  - TDD - went wrong with that and ended up abandoning it
+  - merging/branching
+  - energy 
+  - best practices (e.g. fat controller)
+- ***NEXT WEEK:***
+  - conflict handling
+  - testing (TDD)
+  - refactoring
